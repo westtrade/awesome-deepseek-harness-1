@@ -146,6 +146,8 @@ Management panel: Settings → Plugins.
 
 - [cckyros/goal-acceptance](https://github.com/cckyros/goal-acceptance) - Acceptance-criteria goal gating: verifiable criteria locked up front, dependency-aware task plans, reviewer-confirmed completion, plus a headless check/status CLI for agent loop hooks (18 MCP tools).
 - [xingzhen199186/dsh-advisor-group](https://github.com/xingzhen199186/dsh-advisor-group) - Consults multiple advisor models in one tool call, with auto-deepen follow-up rounds and a streamed chat card.
+- [westtrade/dsh-cron-schedule](https://github.com/westtrade/deepseek-harness-plugins/tree/main/dsh-cron-schedule) - Scheduled AI runs: at a set time a new chat is created in a chosen directory and receives the task, with cron presets, per-task model, missed-run handling and cron_* tools for the model.
+- [westtrade/dsh-goal-vector](https://github.com/westtrade/deepseek-harness-plugins/tree/main/dsh-goal-vector) - Goals vectors: named, priority-ordered goal lists a chat adopts so the model follows them for the whole session, with a management page, a composer picker and goal_vector_* tools.
 
 ## Context & Search
 
@@ -186,6 +188,7 @@ Management panel: Settings → Plugins.
 - [huuthuan-nguyen/dsh-tgrep](https://github.com/huuthuan-nguyen/dsh-tgrep) - Ultra-fast trigram-indexed code search powered by Microsoft tgrep, shadowing the built-in grep tool.
 - [dsh-context-imports](https://github.com/ciskonc/dsh-context-imports) - Claude Code-style `@path` imports for AGENTS.md/CLAUDE.md: recursively expands and injects referenced files into model context at session start, with a six-language settings card.
 - [dsh-sieve](https://github.com/Sev7eEn7/sieve) - Filters tool outputs, prunes stale context and discloses skills on demand for DSH 0.2.1-alpha.1.
+- [westtrade/svelte-mcp-local](https://github.com/westtrade/deepseek-harness-plugins/tree/main/svelte-mcp-local) - Svelte documentation MCP server with a local cache: the same four tools as @sveltejs/mcp, but docs come from disk instead of svelte.dev on every call.
 
 ## Memory & Knowledge
 
@@ -346,6 +349,7 @@ Management panel: Settings → Plugins.
 - [dsh-ui-hub](https://github.com/Han-1413141/dsh-ui-hub) - Search, show, hide, move, resize and arrange plugin controls in DSH Desktop and Web, with layout backup, restore and undo.
 - [zhao-guang-ai/dsh-quote-annotate-pro](https://github.com/zhao-guang-ai/dsh-quote-annotate-pro) - Selection quoting and anchored annotations with source-message navigation, turn and role labels in sent quotes, and localStorage persistence; localhost diagnostic requests are enabled by default.
 - [dsh-skill-mini-manager](https://github.com/runcat-tommy/dsh-skill-mini-manager) - Minimal skill manager for DeepSeek Harness Web Settings: lists installed skills with summaries, sources and disk usage, and moves eligible filesystem skills to a recoverable trash while protecting bundled and system skills.
+- [westtrade/dsh-excalidraw](https://github.com/westtrade/deepseek-harness-plugins/tree/main/dsh-excalidraw) - Excalidraw board per chat in the right sidebar, with one shared template library and excalidraw_read/excalidraw_write tools so the agent draws on the same board.
 
 
 ## Dashboards & Session UX
@@ -434,6 +438,7 @@ Management panel: Settings → Plugins.
 - [weibaohui/dsh-dashboard](https://github.com/weibaohui/dsh-dashboard) - Usage dashboard: offline-scans session logs to chart daily/weekly/monthly tokens, estimated costs, model/tool/skill/command leaderboards, output speed, working hours and quality metrics; gridstack+ECharts cards are drag-and-drop composable, with custom formulas and AI arrangement (prompt round-trip import).
 - [olimc2016/dsh-token-meter-panel](https://github.com/olimc2016/dsh-token-meter-panel) - Sidebar panel for token usage and cost: today's spend, budget progress, 7/30-day trends, cost breakdown, cache-hit savings, and per-session breakdown.
 - [dsh-maze](https://github.com/lamost423/dsh-maze) - Execution maze for agent sessions: main path, detours and backtracks on one timeline, per-step data tracks (tools, tokens, context pressure), deterministic analysis (outcome evidence, behavior signals) and multi-session comparison.
+- [westtrade/dsh-project-cost](https://github.com/westtrade/deepseek-harness-plugins/tree/main/dsh-project-cost) - Project spend meter: money spent per workspace directory from session token usage, priced against the routerai.ru public model catalog, with workspace badges and a costs panel.
 ## IDE & Clients
 
 - [Minke](https://github.com/lencx/Minke) - Desktop agent workspace for DeepSeek Harness on macOS, Windows, and Linux, with shared browser control, integrated files and terminals, remote access, and local model management.
@@ -481,6 +486,7 @@ Management panel: Settings → Plugins.
 - [dsh-native-macos](https://github.com/DanielW203/dsh-native-macos) - Native SwiftUI macOS client for DeepSeek Harness: several releases installed side by side, an 8-check self-test after each upgrade with one-shot rollback, safe-mode recovery, and a built-in WeChat/phone remote channel.
 - [deepseek-harness-android](https://github.com/guzhou079-arch/deepseek-harness-android) - Android client bundling the DSH runtime and skills in an installable APK, with on-device builds and virtual-display automation; no Termux or root required.
 - [DSH_Mobile](https://github.com/jayantTang/DSH_Mobile) - Native iOS client with a host-side connector and a self-hostable WSS relay: reach the DSH sessions on your own computer from an iPhone over 4G/5G, without a public IP or a VPN.
+- [westtrade/deepseek-desktop](https://github.com/westtrade/deepseek-harness-plugins/tree/main/deepseek-desktop) - Desktop window for DSH on Neutralinojs: boots dsh --profile web, hides to the tray on close, and keeps a single instance instead of opening a second window.
 
 ## Browser & Remote
 
@@ -851,6 +857,7 @@ Management panel: Settings → Plugins.
 - [weibaohui/dsh-fde-tools](https://github.com/weibaohui/dsh-fde-tools) - FDE toolbox bundle: installing this one plugin pulls in a curated set of common dsh plugins (Git server, WebDAV mount, knowledge base, scheduled tasks, auto-resume, UI tweaks, auto-retrospection, file manager, smart titles, task board, plugin market, context trimmer, IM bridge, sidebar enhancements), with a panel showing install status and one-click gap-filling.
 - [dsh-autocompose](https://github.com/Han-1413141/dsh-autocompose) - Find and compose DSH plugins from a task description, then open an independent chat environment or install the plan into the current profile.
 - [dsh-pnpm-build-control](https://github.com/Han-1413141/dsh-pnpm-build-control) - Manage pnpm build-script approval across all DSH profiles, including an option to allow every dependency build script, and repair same-Git-URL updates on DSH 0.2.0-rc.2.
+- [westtrade/dsh-plugin-showcase](https://github.com/westtrade/deepseek-harness-plugins/tree/main/dsh-plugin-showcase) - Plugin showcase: a catalog page of community DSH plugins with images, descriptions, stars and GitHub links, plus install/remove buttons that run dsh plugin add for you.
 
 ## Runtime & Operations
 
@@ -994,6 +1001,7 @@ Management panel: Settings → Plugins.
 - [Continuum-AI-Corp/OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) - Standalone CLI that records model-provider traffic and replays a session offline with no provider contacted; DSH needs `orca attach --port N` because it resolves its provider origin from config rather than a base-URL environment variable.
 
 - [lcy0121/dsh-plugin-compat-check](https://github.com/lcy0121/dsh-plugin-compat-check) - Pre-install compatibility checker for DSH plugins: installs a plugin into a throwaway profile, boots the host, dumps its real API surface including prototype-chain methods, and diffs that against the services and methods the plugin actually calls.
+- [westtrade/dsh-moleculer](https://github.com/westtrade/deepseek-harness-plugins/tree/main/dsh-moleculer) - Moleculer integration: joins a Moleculer mesh, publishes every service as a model tool, exposes the same set over MCP and reports service joins, leaves and changes to the running model.
 
 ## Related
 
